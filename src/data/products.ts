@@ -1,8 +1,8 @@
 export const productsData = {
   "Sight Glasses & Valves": [
+    { name: "Acrylic Site Glass", image: () => import("@/assets/products/acrylic-sight-glass.jpg") },
     { name: "Ball Float Valve", image: () => import("@/assets/products/ball-float-valve.jpg") },
     { name: "Brass Safety Valve", image: () => import("@/assets/products/brass-safety-valve.jpg") },
-    { name: "Butterfly Valve", image: () => import("@/assets/products/butterfly-valve.jpg") },
     { name: "Butterfly Valve Duplex Strainer", image: () => import("@/assets/products/duplex-strainer.jpg") },
     { name: "Conical Strainer", image: () => import("@/assets/products/conical-strainer.jpg") },
     { name: "Pressure Release Valve", image: () => import("@/assets/products/pressure-release-valve.jpg") },
