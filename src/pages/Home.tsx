@@ -3,19 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Factory, Award, Wrench, Target, ChevronRight } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-import acrylicSightGlass from "@/assets/products/acrylic-sight-glass.jpg";
-import ballFloatValve from "@/assets/products/ball-float-valve.jpg";
-import brassSafetyValve from "@/assets/products/brass-safety-valve.jpg";
+import acrylicSiteGlass from "@/assets/products/ball-float-valve.jpg";
+import ballFloatValve from "@/assets/products/brass-safety-valve.jpg";
+import brassSafetyValve from "@/assets/products/butterfly-valve.jpg";
 import duplexStrainer from "@/assets/products/duplex-strainer.jpg";
 import magneticLevelIndicator from "@/assets/products/magnetic-level-indicator.jpg";
 import cncComponents from "@/assets/products/cnc-machined-components.jpg";
 
 const Home = () => {
   const featuredProducts = [
-    { name: "Acrylic Sight Glass", image: acrylicSightGlass },
+    { name: "Acrylic Site Glass", image: acrylicSiteGlass },
     { name: "Ball Float Valve", image: ballFloatValve },
     { name: "Brass Safety Valve", image: brassSafetyValve },
-    { name: "Duplex Strainer", image: duplexStrainer },
+    { name: "Butterfly Valve Duplex Strainer", image: duplexStrainer },
     { name: "Magnetic Level Indicator", image: magneticLevelIndicator },
     { name: "CNC Machined Components", image: cncComponents },
   ];
