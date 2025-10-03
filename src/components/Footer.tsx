@@ -34,7 +34,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div>
+          <div className="bg-secondary/30 p-6 rounded-lg">
             <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
@@ -47,7 +47,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="bg-secondary/30 p-6 rounded-lg">
             <h4 className="font-semibold text-lg mb-4">More Info</h4>
             <ul className="space-y-2">
               {otherLinks.map((link) => (
