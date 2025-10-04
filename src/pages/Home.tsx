@@ -23,7 +23,7 @@ const Home = () => {
   const highlights = [
     { icon: Award, title: "10+ Years Experience", desc: "Proven track record in precision manufacturing" },
     { icon: Factory, title: "Advanced Machinery", desc: "State-of-the-art CNC and fabrication equipment" },
-    { icon: Wrench, title: "Custom Solutions", desc: "Tailored engineering and design services" },
+    { icon: Wrench, title: "CAD/CAM Design", desc: "Expert design services using SolidWorks & AutoCAD" },
     { icon: Target, title: "Multi-Industry", desc: "Serving food, pharma, textile, and more" },
   ];
 
@@ -75,8 +75,9 @@ const Home = () => {
             <p className="text-muted-foreground leading-relaxed">
               Amaze Engineering is backed with an experience of vast years in the field of Engineering Products. 
               We have grown today to a company of high repute for manufacturing, developing and supply of Precision 
-              Parts and Fabrication work. Our technical expertise backed by state-of-the-art manufacturing facilities 
-              gives us the upper edge to fulfill market requirements.
+              Parts and Fabrication work. Our technical expertise, backed by state-of-the-art manufacturing facilities 
+              and professional CAD/CAM design capabilities using SolidWorks and AutoCAD, gives us the upper edge to 
+              fulfill market requirements with precision-engineered solutions.
             </p>
           </div>
 

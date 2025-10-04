@@ -1,8 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Cog, Wrench, Recycle, Settings, TestTube, Sparkles } from "lucide-react";
+import { Cog, Wrench, Recycle, Settings, TestTube, Sparkles, Cpu } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const Services = () => {
   const services = [
+    {
+      icon: Cpu,
+      title: "CAD/CAM Design",
+      description: "Professional component design using SolidWorks and AutoCAD for precision engineering solutions.",
+    },
     {
       icon: Cog,
       title: "Precision Machining",
@@ -85,10 +92,15 @@ const Services = () => {
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-3">Custom Component Design</h3>
+                    <h3 className="font-semibold text-lg mb-3">CAD/CAM Engineering Design</h3>
                     <p className="text-muted-foreground">
-                      Design and development of custom engineered components tailored to your specific requirements.
+                      Professional 3D modeling and technical drawing services using SolidWorks and AutoCAD platforms.
                     </p>
+                    <Link to="/design">
+                      <Button variant="link" className="p-0 h-auto text-primary">
+                        Learn more about our design services →
+                      </Button>
+                    </Link>
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-3">Quality Assurance</h3>
