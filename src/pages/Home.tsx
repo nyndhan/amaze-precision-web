@@ -21,7 +21,7 @@ const Home = () => {
   ];
 
   const highlights = [
-    { icon: Award, title: "10+ Years Experience", desc: "Proven track record in precision manufacturing" },
+    { icon: Award, title: "15+ Years Experience", desc: "Proven track record in precision manufacturing" },
     { icon: Factory, title: "Advanced Machinery", desc: "State-of-the-art CNC and fabrication equipment" },
     { icon: Wrench, title: "CAD/CAM Design", desc: "Expert design services using SolidWorks & AutoCAD" },
     { icon: Target, title: "Multi-Industry", desc: "Serving food, pharma, textile, and more" },

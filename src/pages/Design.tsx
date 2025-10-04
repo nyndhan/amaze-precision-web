@@ -98,7 +98,8 @@ const Design = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up">
               Our Design Work
             </h2>
-            <Card className="card-shadow overflow-hidden animate-scale-in">
+            
+            <Card className="card-shadow overflow-hidden animate-scale-in mb-8">
               <CardContent className="p-0">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                   <div className="p-8 lg:p-12">
@@ -135,6 +136,50 @@ const Design = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.1s" }}>
+                <CardContent className="p-0">
+                  <div className="relative bg-black">
+                    <video
+                      controls
+                      className="w-full h-auto"
+                      poster={designExample}
+                    >
+                      <source src="/videos/solidworks-demo-1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">SolidWorks 3D Assembly Design</h3>
+                    <p className="text-muted-foreground">
+                      Complex assembly modeling with precise component integration and motion simulation.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.2s" }}>
+                <CardContent className="p-0">
+                  <div className="relative bg-black">
+                    <video
+                      controls
+                      className="w-full h-auto"
+                      poster={designExample}
+                    >
+                      <source src="/videos/solidworks-demo-2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">CAD Component Engineering</h3>
+                    <p className="text-muted-foreground">
+                      Detailed engineering design with parametric modeling and technical specifications.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
