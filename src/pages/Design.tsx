@@ -1,6 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Cpu, Box, Ruler, Grid3x3, Layers, Zap } from "lucide-react";
 import designExample from "@/assets/design/cad-design-example.png";
+import cadDrawing1 from "@/assets/design/cad-technical-drawing-1.png";
+import cadDrawing2 from "@/assets/design/cad-technical-drawing-2.png";
+import cadDrawing3 from "@/assets/design/cad-technical-drawing-3.png";
+import cadDrawing4 from "@/assets/design/cad-technical-drawing-4.png";
+import cadDrawing5 from "@/assets/design/cad-technical-drawing-5.png";
+import solidworks1 from "@/assets/design/solidworks-3d-model-1.png";
+import solidworks2 from "@/assets/design/solidworks-3d-model-2.png";
+import solidworks3 from "@/assets/design/solidworks-3d-model-3.png";
 
 const Design = () => {
   const capabilities = [
@@ -137,7 +145,7 @@ const Design = () => {
               </CardContent>
             </Card>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
               <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.1s" }}>
                 <CardContent className="p-0">
                   <div className="relative bg-black">
@@ -179,6 +187,144 @@ const Design = () => {
                   </div>
                 </CardContent>
               </Card>
+            </div>
+
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold text-center mb-8">SolidWorks 3D Models</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.3s" }}>
+                  <CardContent className="p-0">
+                    <div className="aspect-square bg-gradient-to-br from-muted to-background p-4">
+                      <img
+                        src={solidworks1}
+                        alt="SolidWorks 3D Component Model"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold">3D Component Assembly</h4>
+                      <p className="text-sm text-muted-foreground">Precision mechanical assembly design</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.4s" }}>
+                  <CardContent className="p-0">
+                    <div className="aspect-square bg-gradient-to-br from-muted to-background p-4">
+                      <img
+                        src={solidworks2}
+                        alt="SolidWorks Circular Component"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold">Circular Component Design</h4>
+                      <p className="text-sm text-muted-foreground">Detailed flange and gasket assembly</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.5s" }}>
+                  <CardContent className="p-0">
+                    <div className="aspect-square bg-gradient-to-br from-muted to-background p-4">
+                      <img
+                        src={solidworks3}
+                        alt="SolidWorks Mechanical Design"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold">Custom Mechanical Part</h4>
+                      <p className="text-sm text-muted-foreground">Specialized component engineering</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-center mb-8">CAD Technical Drawings</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.6s" }}>
+                  <CardContent className="p-0">
+                    <div className="aspect-video bg-muted">
+                      <img
+                        src={cadDrawing1}
+                        alt="CAD Technical Drawing - Component Assembly"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold">Component Assembly Drawing</h4>
+                      <p className="text-sm text-muted-foreground">Detailed dimensional specifications</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.7s" }}>
+                  <CardContent className="p-0">
+                    <div className="aspect-video bg-muted">
+                      <img
+                        src={cadDrawing2}
+                        alt="CAD Technical Drawing - Screw Assembly"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold">Threaded Component Design</h4>
+                      <p className="text-sm text-muted-foreground">Precision screw and thread specifications</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.8s" }}>
+                  <CardContent className="p-0">
+                    <div className="aspect-video bg-muted">
+                      <img
+                        src={cadDrawing3}
+                        alt="CAD Technical Drawing - Circular Component"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold">Circular Component Plans</h4>
+                      <p className="text-sm text-muted-foreground">Top and section view with measurements</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.9s" }}>
+                  <CardContent className="p-0">
+                    <div className="aspect-video bg-muted">
+                      <img
+                        src={cadDrawing4}
+                        alt="CAD Technical Drawing - Conveyor Shaft"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold">Conveyor Take Over Shaft</h4>
+                      <p className="text-sm text-muted-foreground">Complete assembly with spacer details</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "1.0s" }}>
+                  <CardContent className="p-0">
+                    <div className="aspect-video bg-muted">
+                      <img
+                        src={cadDrawing5}
+                        alt="CAD Technical Drawing - Flow Control"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold">Flow Control Assembly</h4>
+                      <p className="text-sm text-muted-foreground">Multi-view technical specifications</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>

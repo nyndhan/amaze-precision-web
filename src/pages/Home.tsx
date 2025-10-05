@@ -60,7 +60,7 @@ const Home = () => {
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button size="lg" variant="outline" className="border-white bg-white/10 text-white hover:bg-white hover:text-primary">
                 Get a Quote
               </Button>
             </Link>
