@@ -86,12 +86,6 @@ const Services = () => {
                 <h2 className="text-3xl font-bold text-primary mb-6 text-center">Additional Capabilities</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <h3 className="font-semibold text-lg mb-3">Shear Blade Production</h3>
-                    <p className="text-muted-foreground">
-                      Specialized production of high-quality shear blades for various industrial cutting applications.
-                    </p>
-                  </div>
-                  <div>
                     <h3 className="font-semibold text-lg mb-3">CAD/CAM Engineering Design</h3>
                     <p className="text-muted-foreground">
                       Professional 3D modeling and technical drawing services using SolidWorks and AutoCAD platforms.
@@ -101,12 +95,6 @@ const Services = () => {
                         Learn more about our design services →
                       </Button>
                     </Link>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-3">Quality Assurance</h3>
-                    <p className="text-muted-foreground">
-                      Rigorous quality control processes ensuring all products meet highest industry standards.
-                    </p>
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-3">Technical Consultation</h3>

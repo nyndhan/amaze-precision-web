@@ -9,7 +9,6 @@ const Infrastructure = () => {
     { name: "Conventional Milling Machine", category: "Machining" },
     { name: "Surface Grinding", category: "Finishing" },
     { name: "Shaper Machine", category: "Machining" },
-    { name: "Shear Blade Production", category: "Specialized" },
     { name: "Drilling Machines", category: "Machining" },
     { name: "Hydraulic Testing Equipments", category: "Testing" },
     { name: "Welding Machines and Fabrication Setup", category: "Fabrication" },
@@ -77,7 +76,7 @@ const Infrastructure = () => {
                 <h3 className="text-2xl font-bold text-primary mb-6 text-center">Our Advantage</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-secondary mb-2">10+</div>
+                    <div className="text-4xl font-bold text-secondary mb-2">15+</div>
                     <p className="text-muted-foreground">Years of Experience</p>
                   </div>
                   <div className="text-center">
@@ -85,7 +84,7 @@ const Infrastructure = () => {
                     <p className="text-muted-foreground">Advanced Machines</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-secondary mb-2">100+</div>
+                    <div className="text-4xl font-bold text-secondary mb-2">1000+</div>
                     <p className="text-muted-foreground">Products Manufactured</p>
                   </div>
                 </div>

@@ -3,7 +3,7 @@ import { CheckCircle2, Target, Eye, Wrench } from "lucide-react";
 
 const About = () => {
   const features = [
-    { icon: CheckCircle2, title: "Expertise", desc: "Vast years of experience in precision engineering" },
+    { icon: CheckCircle2, title: "Expertise", desc: "15+ years of experience in precision engineering" },
     { icon: Target, title: "Quality", desc: "High repute for manufacturing precision parts" },
     { icon: Wrench, title: "Technology", desc: "State-of-the-art manufacturing facilities" },
     { icon: Eye, title: "Reliability", desc: "Proven track record across multiple industries" },
@@ -98,7 +98,14 @@ const About = () => {
             <h2 className="text-3xl font-bold text-center mb-8 animate-slide-up">Our Capabilities</h2>
             <Card className="card-shadow animate-scale-in">
               <CardContent className="p-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div>
+                    <h3 className="font-semibold text-lg text-primary mb-4">CAD/CAM Design</h3>
+                    <p className="text-muted-foreground">
+                      Professional design services using SolidWorks and AutoCAD for precision component design, 
+                      3D modeling, and technical drawings with expert CAD/CAM capabilities.
+                    </p>
+                  </div>
                   <div>
                     <h3 className="font-semibold text-lg text-primary mb-4">Machine Shop</h3>
                     <p className="text-muted-foreground">
