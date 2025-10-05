@@ -152,7 +152,6 @@ const Design = () => {
                     <video
                       controls
                       className="w-full h-auto"
-                      poster={designExample}
                     >
                       <source src="/videos/solidworks-demo-1.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
@@ -173,16 +172,75 @@ const Design = () => {
                     <video
                       controls
                       className="w-full h-auto"
-                      poster={designExample}
                     >
                       <source src="/videos/solidworks-demo-2.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">CAD Component Engineering</h3>
+                    <h3 className="text-xl font-bold mb-2">SolidWorks 3D Assembly Design</h3>
                     <p className="text-muted-foreground">
                       Detailed engineering design with parametric modeling and technical specifications.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.3s" }}>
+                <CardContent className="p-0">
+                  <div className="relative bg-black">
+                    <video
+                      controls
+                      className="w-full h-auto"
+                    >
+                      <source src="/videos/solidworks-demo-3.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">SolidWorks 3D Assembly Design</h3>
+                    <p className="text-muted-foreground">
+                      Advanced component design with detailed specifications and assembly integration.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.4s" }}>
+                <CardContent className="p-0">
+                  <div className="relative bg-black">
+                    <video
+                      controls
+                      className="w-full h-auto"
+                    >
+                      <source src="/videos/solidworks-demo-4.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">SolidWorks 3D Assembly Design</h3>
+                    <p className="text-muted-foreground">
+                      Precision mechanical design with comprehensive technical documentation.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.5s" }}>
+                <CardContent className="p-0">
+                  <div className="relative bg-black">
+                    <video
+                      controls
+                      className="w-full h-auto"
+                    >
+                      <source src="/videos/solidworks-demo-5.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">SolidWorks 3D Assembly Design</h3>
+                    <p className="text-muted-foreground">
+                      Detailed 3D modeling with manufacturing-ready design specifications.
                     </p>
                   </div>
                 </CardContent>
