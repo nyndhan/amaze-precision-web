@@ -1,24 +1,32 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Factory, Award, Wrench, Target, ChevronRight } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-import acrylicSiteGlass from "@/assets/products/ball-float-valve.jpg";
-import ballFloatValve from "@/assets/products/brass-safety-valve.jpg";
-import brassSafetyValve from "@/assets/products/butterfly-valve.jpg";
-import duplexStrainer from "@/assets/products/duplex-strainer.jpg";
-import magneticLevelIndicator from "@/assets/products/magnetic-level-indicator.jpg";
-import cncComponents from "@/assets/products/cnc-machined-components.jpg";
+import { productsData } from "@/data/products";
 
 const Home = () => {
-  const featuredProducts = [
-    { name: "Acrylic Site Glass", image: acrylicSiteGlass },
-    { name: "Ball Float Valve", image: ballFloatValve },
-    { name: "Brass Safety Valve", image: brassSafetyValve },
-    { name: "Butterfly Valve Duplex Strainer", image: duplexStrainer },
-    { name: "Magnetic Level Indicator", image: magneticLevelIndicator },
-    { name: "CNC Machined Components", image: cncComponents },
-  ];
+  const [featuredProducts, setFeaturedProducts] = useState<Array<{ name: string; image: string }>>([]);
+
+  useEffect(() => {
+    const loadFeaturedProducts = async () => {
+      // Get first 6 products from Machined & Fabricated Components category
+      const category = "Machined & Fabricated Components";
+      const products = productsData[category].slice(0, 6);
+      
+      const loaded = await Promise.all(
+        products.map(async (product) => ({
+          name: product.name,
+          image: (await product.image()).default,
+        }))
+      );
+      
+      setFeaturedProducts(loaded);
+    };
+
+    loadFeaturedProducts();
+  }, []);
 
   const highlights = [
     { icon: Award, title: "15+ Years Experience", desc: "Proven track record in precision manufacturing" },

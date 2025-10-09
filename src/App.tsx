@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopOnRoute from "./components/ScrollToTopOnRoute";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Index from "./pages/Home";
 import About from "./pages/About";
@@ -26,6 +27,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTopOnRoute />
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-1">

@@ -5,6 +5,8 @@ const Infrastructure = () => {
   const equipment = [
     { name: "Conventional Lathe", category: "Machining" },
     { name: "Gear Hobbing Machines", category: "Specialized" },
+    { name: "CNC Turning Centre", category: "Specialized" },
+    { name: "Vertical Milling Machine", category: "Specialized" },
     { name: "DRO Milling Machine", category: "Machining" },
     { name: "Conventional Milling Machine", category: "Machining" },
     { name: "Surface Grinding", category: "Finishing" },
