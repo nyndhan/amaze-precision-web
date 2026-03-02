@@ -9,6 +9,10 @@ import cadDrawing5 from "@/assets/design/cad-technical-drawing-5.png";
 import solidworks1 from "@/assets/design/solidworks-3d-model-1.png";
 import solidworks2 from "@/assets/design/solidworks-3d-model-2.png";
 import solidworks3 from "@/assets/design/solidworks-3d-model-3.png";
+import conveyorRollerShaft from "@/assets/design/conveyor-roller-shaft.png";
+import foundationBolt from "@/assets/design/foundation-bolt.png";
+import liftingTongs from "@/assets/design/lifting-tongs.png";
+import reelLifting from "@/assets/design/reel-lifting.png";
 
 const Design = () => {
   const capabilities = [
@@ -250,166 +254,54 @@ const Design = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold text-center mb-8">SolidWorks 3D Models</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.3s" }}>
-                  <CardContent className="p-0">
-                    <div className="aspect-square bg-gradient-to-br from-muted to-background p-4">
-                      <img
-                        src={solidworks1}
-                        alt="SolidWorks 3D Component Model"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold">3D Component Assembly</h4>
-                      <p className="text-sm text-muted-foreground">Precision mechanical assembly design</p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.4s" }}>
-                  <CardContent className="p-0">
-                    <div className="aspect-square bg-gradient-to-br from-muted to-background p-4">
-                      <img
-                        src={solidworks2}
-                        alt="SolidWorks Circular Component"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold">Circular Component Design</h4>
-                      <p className="text-sm text-muted-foreground">Detailed flange and gasket assembly</p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.5s" }}>
-                  <CardContent className="p-0">
-                    <div className="aspect-square bg-gradient-to-br from-muted to-background p-4">
-                      <img
-                        src={solidworks3}
-                        alt="SolidWorks Mechanical Design"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold">Custom Mechanical Part</h4>
-                      <p className="text-sm text-muted-foreground">Specialized component engineering</p>
-                    </div>
-                  </CardContent>
-                </Card>
+                {[
+                  { src: solidworks1, title: "Valve Body Assembly", desc: "Precision valve body 3D model" },
+                  { src: solidworks2, title: "Flange & Gasket Assembly", desc: "Detailed flange and gasket design" },
+                  { src: solidworks3, title: "Coupling Component", desc: "Custom coupling engineering design" },
+                  { src: conveyorRollerShaft, title: "Conveyor Roller Shaft", desc: "Multi-roller conveyor shaft assembly" },
+                  { src: foundationBolt, title: "Foundation Bolt", desc: "Precision threaded foundation bolt" },
+                  { src: liftingTongs, title: "Lifting Tongs Assembly", desc: "Heavy-duty lifting tongs mechanism" },
+                  { src: reelLifting, title: "Reel Lifting Device", desc: "Reel lifting and handling equipment" },
+                ].map((item, index) => (
+                  <Card key={index} className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: `${0.3 + index * 0.1}s` }}>
+                    <CardContent className="p-0">
+                      <div className="aspect-square bg-gradient-to-br from-muted to-background p-4">
+                        <img src={item.src} alt={item.title} className="w-full h-full object-contain" />
+                      </div>
+                      <div className="p-4">
+                        <h4 className="font-semibold">{item.title}</h4>
+                        <p className="text-sm text-muted-foreground">{item.desc}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </div>
 
             <div>
               <h3 className="text-2xl font-bold text-center mb-8">CAD Technical Drawings</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.6s" }}>
-                  <CardContent className="p-0">
-                    <div className="aspect-video bg-muted">
-                      <img
-                        src={cadDrawing1}
-                        alt="CAD Technical Drawing - Component Assembly"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold">Component Assembly Drawing</h4>
-                      <p className="text-sm text-muted-foreground">Detailed dimensional specifications</p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.7s" }}>
-                  <CardContent className="p-0">
-                    <div className="aspect-video bg-muted">
-                      <img
-                        src={cadDrawing2}
-                        alt="CAD Technical Drawing - Screw Assembly"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold">Threaded Component Design</h4>
-                      <p className="text-sm text-muted-foreground">Precision screw and thread specifications</p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.8s" }}>
-                  <CardContent className="p-0">
-                    <div className="aspect-video bg-muted">
-                      <img
-                        src={cadDrawing3}
-                        alt="CAD Technical Drawing - Circular Component"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold">Circular Component Plans</h4>
-                      <p className="text-sm text-muted-foreground">Top and section view with measurements</p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.9s" }}>
-                  <CardContent className="p-0">
-                    <div className="aspect-video bg-muted">
-                      <img
-                        src={cadDrawing4}
-                        alt="CAD Technical Drawing - Conveyor Shaft"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold">Conveyor Take Over Shaft</h4>
-                      <p className="text-sm text-muted-foreground">Complete assembly with spacer details</p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "1.0s" }}>
-                  <CardContent className="p-0">
-                    <div className="aspect-video bg-muted">
-                      <img
-                        src={cadDrawing5}
-                        alt="CAD Technical Drawing - Flow Control"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold">Flow Control Assembly</h4>
-                      <p className="text-sm text-muted-foreground">Multi-view technical specifications</p>
-                    </div>
-                  </CardContent>
-                </Card>
+                {[
+                  { src: cadDrawing1, title: "Sight Glass Assembly Drawing", desc: "Detailed dimensional specifications" },
+                  { src: cadDrawing2, title: "Threaded Fastener Design", desc: "Precision screw and thread specifications" },
+                  { src: cadDrawing3, title: "Circular Flange Drawing", desc: "Top and section view with measurements" },
+                  { src: cadDrawing4, title: "Conveyor Take Over Shaft", desc: "Complete assembly with spacer details" },
+                  { src: cadDrawing5, title: "Flow Control Assembly", desc: "Multi-view technical specifications" },
+                ].map((item, index) => (
+                  <Card key={index} className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: `${0.6 + index * 0.1}s` }}>
+                    <CardContent className="p-0">
+                      <div className="aspect-video bg-muted">
+                        <img src={item.src} alt={item.title} className="w-full h-full object-cover" />
+                      </div>
+                      <div className="p-4">
+                        <h4 className="font-semibold">{item.title}</h4>
+                        <p className="text-sm text-muted-foreground">{item.desc}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up">
-              Design Services We Offer
-            </h2>
-            <Card className="card-shadow animate-scale-in">
-              <CardContent className="p-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {features.map((feature, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start gap-3 animate-fade-in"
-                      style={{ animationDelay: `${index * 0.05}s` }}
-                    >
-                      <div className="h-2 w-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-muted-foreground">{feature}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
