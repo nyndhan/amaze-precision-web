@@ -150,105 +150,36 @@ const Design = () => {
             </Card>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-              <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.1s" }}>
-                <CardContent className="p-0">
-                  <div className="relative bg-black">
-                    <video
-                      controls
-                      className="w-full h-auto"
-                    >
-                      <source src="/videos/solidworks-demo-1.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">SolidWorks 3D Assembly Design</h3>
-                    <p className="text-muted-foreground">
-                      Complex assembly modeling with precise component integration and motion simulation.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.2s" }}>
-                <CardContent className="p-0">
-                  <div className="relative bg-black">
-                    <video
-                      controls
-                      className="w-full h-auto"
-                    >
-                      <source src="/videos/solidworks-demo-2.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">SolidWorks 3D Assembly Design</h3>
-                    <p className="text-muted-foreground">
-                      Detailed engineering design with parametric modeling and technical specifications.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.3s" }}>
-                <CardContent className="p-0">
-                  <div className="relative bg-black">
-                    <video
-                      controls
-                      className="w-full h-auto"
-                    >
-                      <source src="/videos/solidworks-demo-3.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">SolidWorks 3D Assembly Design</h3>
-                    <p className="text-muted-foreground">
-                      Advanced component design with detailed specifications and assembly integration.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.4s" }}>
-                <CardContent className="p-0">
-                  <div className="relative bg-black">
-                    <video
-                      controls
-                      className="w-full h-auto"
-                    >
-                      <source src="/videos/solidworks-demo-4.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">SolidWorks 3D Assembly Design</h3>
-                    <p className="text-muted-foreground">
-                      Precision mechanical design with comprehensive technical documentation.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: "0.5s" }}>
-                <CardContent className="p-0">
-                  <div className="relative bg-black">
-                    <video
-                      controls
-                      className="w-full h-auto"
-                    >
-                      <source src="/videos/solidworks-demo-5.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">SolidWorks 3D Assembly Design</h3>
-                    <p className="text-muted-foreground">
-                      Detailed 3D modeling with manufacturing-ready design specifications.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+              {[
+                { src: "/videos/solidworks-demo-1.mp4", title: "SolidWorks 3D Assembly Design", desc: "Complex assembly modeling with precise component integration and motion simulation." },
+                { src: "/videos/solidworks-demo-2.mp4", title: "SolidWorks 3D Assembly Design", desc: "Detailed engineering design with parametric modeling and technical specifications." },
+                { src: "/videos/solidworks-demo-3.mp4", title: "SolidWorks 3D Assembly Design", desc: "Advanced component design with detailed specifications and assembly integration." },
+                { src: "/videos/solidworks-demo-4.mp4", title: "SolidWorks 3D Assembly Design", desc: "Precision mechanical design with comprehensive technical documentation." },
+                { src: "/videos/solidworks-demo-5.mp4", title: "SolidWorks 3D Assembly Design", desc: "Detailed 3D modeling with manufacturing-ready design specifications." },
+                { src: "/videos/l-clamp.mp4", title: "L Clamp Assembly Design", desc: "Precision L clamp 3D modeling with detailed structural analysis." },
+                { src: "/videos/lifting-tongs.mp4", title: "Lifting Tongs Assembly Design", desc: "Heavy-duty lifting tongs mechanism with motion simulation." },
+                { src: "/videos/scissors-lift.mp4", title: "Scissors Lift Assembly Design", desc: "Hydraulic scissors lift mechanism with parametric modeling." },
+                { src: "/videos/slide-gate.mp4", title: "Slide Gate Assembly Design", desc: "Industrial slide gate valve 3D design with flow analysis." },
+                { src: "/videos/v-groove-roller.mp4", title: "V Groove Roller Assembly Design", desc: "V groove roller conveyor system with assembly integration." },
+                { src: "/videos/bottom-open-pin.mp4", title: "Bottom Open Pin Assembly Design", desc: "Bottom open pin mechanism with detailed specifications." },
+                { src: "/videos/crane-tongs.mp4", title: "Crane Tongs Assembly Design", desc: "Heavy-duty crane tongs with load-bearing analysis." },
+                { src: "/videos/gear-box-lifting-mechanism.mp4", title: "Gear Box Lifting Mechanism Design", desc: "Gear box lifting mechanism with motion simulation and stress analysis." },
+              ].map((video, index) => (
+                <Card key={index} className="card-shadow overflow-hidden animate-scale-in" style={{ animationDelay: `${0.1 + index * 0.05}s` }}>
+                  <CardContent className="p-0">
+                    <div className="relative bg-black">
+                      <video controls className="w-full h-auto">
+                        <source src={video.src} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-2">{video.title}</h3>
+                      <p className="text-muted-foreground">{video.desc}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
 
             <div className="mb-12">

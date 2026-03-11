@@ -32,13 +32,18 @@ const Services = () => {
     },
     {
       icon: TestTube,
-      title: "Hydraulic Testing",
-      description: "Comprehensive hydraulic testing equipment and pressure testing services.",
+      title: "Hydraulic & Pneumatic Testing",
+      description: "Comprehensive hydraulic and pneumatic testing equipment and pressure testing services for all types of industrial components.",
     },
     {
       icon: Sparkles,
       title: "Polishing & Grinding",
       description: "Surface finishing, polishing, and precision grinding for optimal product quality.",
+    },
+    {
+      icon: Settings,
+      title: "All Types of Gear Box Reworking",
+      description: "Complete gear box reconditioning, repair, and reworking services for all types of industrial gear boxes.",
     },
   ];
 
