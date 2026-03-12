@@ -13,11 +13,13 @@ const Infrastructure = () => {
     { name: "Shaper Machine", category: "Machining" },
     { name: "Drilling Machines", category: "Machining" },
     { name: "Hydraulic Testing Equipments", category: "Testing" },
+    { name: "Pneumatic Testing Equipments", category: "Testing" },
     { name: "Welding Machines and Fabrication Setup", category: "Fabrication" },
     { name: "Polishing and Grinding", category: "Finishing" },
     { name: "Large Assembly Areas", category: "Assembly" },
     { name: "Small Assembly Areas", category: "Assembly" },
     { name: "Critical Component Reconditioning Service", category: "Services" },
+    { name: "All Types of Gear Box Reworking", category: "Services" },
     { name: "Custom Casting (CI, Al, PB, Bronze)", category: "Casting" },
   ];
 
